@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pokédex</title>
+  </head>
+  <body>
+    <header>
+        <div class="box none">
+            <div class="cont-lignes btn1">
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+                <div class="lignes"></div>
+            </div>
+        </div>
+        <h1>Bienvenue dans le Pokédex!</h1>
+        <div class="sticky-div">
+            <div class="menu-container">
+                <div class="left-menu">
+                    <div class="elements-menu">
+                        <div class="checkboxes">
+                            <ul class="element-list">
+                                <li>
+                                    <input type="checkbox" id="steel" checked />
+                                    <label for="steel">Acier</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fighting" checked />
+                                    <label for="fighting">Combat</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="dragon" checked />
+                                    <label for="dragon">Dragon</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="water" checked />
+                                    <label for="water">Eau</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="electric" checked />
+                                    <label for="electric">Électrique</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fairy" checked />
+                                    <label for="fairy">Fée</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="fire" checked />
+                                    <label for="fire">Feu</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ice" checked />
+                                    <label for="ice">Glace</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="grass" checked />
+                                    <label for="grass">Herbe</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="bug" checked />
+                                    <label for="bug">Insecte</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="normal" checked />
+                                    <label for="normal">Normal</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="poison" checked />
+                                    <label for="poison">Poison</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="psychic" checked />
+                                    <label for="psychic">Psy</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="rock" checked />
+                                    <label for="rock">Roche</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ground" checked />
+                                    <label for="ground">Sol</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="ghost" checked />
+                                    <label for="ghost">Spectre</label>
+                                </li>
+                                
+                                <li>
+                                    <input type="checkbox" id="dark" checked />
+                                    <label for="dark">Ténèbres</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="vanillish" checked />
+                                    <label for="vanillish">Vol</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="checkboxes-buttons">
+                            <button type="button" class="reset-button">Réinitialiser les filtres</button>
+                            <button type="button" class="remove-filters-button">Enlever les filtres</button>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input class="search-bar" type="text" placeholder="Chercher un pokémon"/>
+                    </div>
+                </div>
+                <div class="right-menu">
+                    <h2>Générations</h2>
+                    <ul class="generation-list">
+                        <li id='generation/1'>1</li>
+                        <li id='generation/2'>2</li>
+                        <li id='generation/3'>3</li>
+                        <li id='generation/4'>4</li>
+                        <li id='generation/5'>5</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container"></main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
