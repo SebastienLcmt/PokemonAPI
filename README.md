@@ -1,6 +1,6 @@
 # Pokemon API
 
-`git clone https://github.com/SebastienLcmt/PokemonAPI.git .`
+`git clone https://github.com/SebastienLcmt/PokemonAPI.git`
 
 > This project was created as part of my studies at the IT-Akademy in Lyon. 
 > It was coded in Html/CSS and native JS.
