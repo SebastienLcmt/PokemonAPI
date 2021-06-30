@@ -1,3 +1,10 @@
+let generations = {
+  'generation1' : [],
+  'generation2' : [],
+  'generation3' : [],
+  'generation4' : [],
+  'generation5' : [],
+}
 let totalPokemon;
 let allPokemon = [];
 const container = document.querySelector(".container");
@@ -10,6 +17,8 @@ const btn = document.querySelector(".btn1");
 const menu = document.querySelector(".sticky-div");
 const generationList = document.querySelectorAll(".generation-list li");
 
+
+
 function fetchAllPokemon(generation) {
   fetch(`https://pokeapi.co/api/v2/${generation}`)
     .then((response) => response.json())
@@ -17,12 +26,12 @@ function fetchAllPokemon(generation) {
       totalPokemon = data.pokemon_species.length;
 
       data.pokemon_species.forEach((pokemon) => {
-        getPokemonData(pokemon);
+        getPokemonData(pokemon, generation);
       });
     });
 }
 
-function getPokemonData(pokemon) {
+function getPokemonData(pokemon, generation){
   allPokemon = [];
   let pokemonCompleted = {};
   fetch(pokemon.url)
@@ -56,7 +65,11 @@ function getPokemonData(pokemon) {
 
           if (allPokemon.length === totalPokemon) {
             allPokemon.sort((a, b) => a.id - b.id);
-            createPokemonCard(allPokemon);
+            let generationName = generation.replace('/','');
+            generations[generationName] = allPokemon;
+            setTimeout(function () {
+              createPokemonCard(allPokemon);
+            }, 500)
           }
         });
     });
@@ -100,18 +113,27 @@ function createPokemonCard(array) {
     cardContainer.appendChild(cardInner);
     container.appendChild(cardContainer);
   }
+  
 }
 
-fetchAllPokemon("generation/1");
+  fetchAllPokemon("generation/1")
+
+
+
 
 // Generation
 
 generationList.forEach((li) => {
   li.addEventListener("click", (e) => {
     e = e.target;
-    generation = e.getAttribute("id");
+    let generation = e.getAttribute("id");
     container.innerHTML = "";
-    fetchAllPokemon(`${generation}`);
+    let genStr = generation.replace('/','');
+    if(generations[genStr].length == 0){
+      fetchAllPokemon(`${generation}`);
+    } else {
+      createPokemonCard(generations[genStr]);
+    }
   });
 });
 
@@ -215,3 +237,5 @@ searchBar.addEventListener("input", (e) => {
     }
   });
 });
+
+
