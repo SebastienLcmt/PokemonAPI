@@ -19,23 +19,27 @@ I know the menu would have looked good like 15 years ago, so let's just call it 
 
 It offers the possibility to sort pokemons by elements, to search for a specific pokemon by typing its name, or to switch to another generation. 
 
-The menu is responsive. Not the best you will ever see, but it does the job. 
+The header is responsive. Not the best you will ever see, but it does the job. 
 
 ### Container
 
 I am quite happy with how the container turned out. The colors look nice, and the svg images provided by the API were perfect for the cards. 
 
 By hovering a card, you can flip it and it will show you the pokemon's height, weight and abilities.
-*Although be aware that sometimes the abilities won't show up, and I have no idea why.* 
 
 
-## Points of improvement / issues with the project
 
-- There must be a reason why the abilites doesn't always show up, and why this happens so randomly.
+## Problems Solved
 
-- If you clik on a generation twice, the JS will fetch the data twice, instead of using the existing json
+- The abilities wouldn't always show up at the cards creation due to delays from the API, but a setTimeout fixed it. 
 
-- I am sure the JavaScript code could be way cleaner, but my knowledge at the time is limited. Everything in due time !
+- I had to find a way to dynamically store the fetched data so that loading a generation a second time wouldn't imply calling the API again. 
+
+## Points of Improvements
+
+- The header's responsivity is not great, especially when approching mobile screen sizes.
+
+- I am sure the JavaScript code (and the code in general) could be way cleaner, but my knowledge at the time is limited. Everything in due time !
 
 
 
