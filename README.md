@@ -2,6 +2,53 @@
 
 `git clone https://github.com/SebastienLcmt/PokemonAPI.git`
 
+> Ce projet a été créé dans le cadre de mes études de l'IT-Akademy à Lyon. 
+> Il a été codé en HTML / CSS, et en Javascript natif.
+> Ce fut ma **première tentative** de consommation d'API, et je suis plutôt heureux du résultat.
+
+Source : [Pokeapi](https://pokeapi.co/)
+
+
+## Description 
+
+Comme on peut s'y attendre, ce projet permet de visualiser tous les pokémons d'une génération. En revanche, je n'ai pas inclus les générations au-delà de la cinquième, à cause du manque de données fournies par l'API (pas d'images par exemple). 
+
+### Menu
+
+Je suis conscient que le menu est un peu lourd, et ressemble à ce qu'il se faisait il y a 15 ans, donc appelons le "vintage". 
+
+Il offre la possibilité de trier les pokémons par élément, de rechercher un pokémon spécifique en cherchant son nom, ainsi que de séléctionner une autre génération.
+
+Le header est "responsive". Pas la meilleure responsivity, mais compte tenu du temps alloué pour la réalisation du projet, ça fait le travail. 
+
+### Container
+
+Je suis assez content du container. Les couleurs pour les éléments donnent un joli rendu, et les images au format SVG fournies par l'API sont parfaites pour les cartes.
+
+On peut retourner une carte en la survolant, et ainsi voir des informations sur le Pokémon, comme sa taille, son poids, et ses capacités (avec une traduction douteuse).
+
+
+## Problèmes résolus
+
+- Les capacités des pokémons ne s'affichaient pas toujours à la création des cartes à cause de petits retards de l'API (je pense), mais j'ai pu résoudre ce problème grâce à un setTimeout sur la création des cartes. 
+
+- J'ai dû trouvé une façon dynamique de stocker les données reçues, afin d'éviter un nouvel appel à l'API à chaque fois qu'on souhaite revoir une génération. La solution que j'ai trouvée est un peu farfelue, mais a résolu ce soucis. 
+
+## Points d'amélioration
+
+- La responsivity du header n'est pas exceptionnelle, surtout en approchant des tailles d'écran mobiles.
+
+- Je suis sûr que le code Javascript pourrait être plus propre (et le code en général), mais mes connaissances à ce jour sont limitées. Chaque chose en son temps.
+
+
+
+
+
+
+# Pokemon API (english)
+
+`git clone https://github.com/SebastienLcmt/PokemonAPI.git`
+
 > This project was created as part of my studies at the IT-Akademy in Lyon. 
 > It was coded in Html/CSS and native JS.
 > It was my **first time** fetching and laying out data from an API, and I'm quite happy with the result.
