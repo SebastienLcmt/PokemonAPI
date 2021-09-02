@@ -1,5 +1,7 @@
 # Pokemon API
 
+https://sebastienlcmt.github.io/PokemonAPI/
+
 `git clone https://github.com/SebastienLcmt/PokemonAPI.git`
 
 > Ce projet a été créé dans le cadre de mes études de l'IT-Akademy à Lyon. 
@@ -46,6 +48,8 @@ On peut retourner une carte en la survolant, et ainsi voir des informations sur 
 
 
 # Pokemon API (english)
+
+https://sebastienlcmt.github.io/PokemonAPI/
 
 `git clone https://github.com/SebastienLcmt/PokemonAPI.git`
 
